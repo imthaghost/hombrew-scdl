@@ -2,16 +2,16 @@
 class Scdl < Formula
   desc "SoundCloud Music Downloader | Scdl is the fastest SoundCloud music downloading CLI tool. Scdl utilizes go routine pools which allows you to download any song from SoundCloud within seconds. There are extended features such as recursively downloading all songs from a given artist and grabbing song artwork."
   homepage "https://github.com/imthaghost/scdl"
-  version "2.0.0"
+  version "2.0.1"
   bottle :unneeded
 
   if OS.mac?
-    url "https://github.com/imthaghost/scdl/releases/download/v2.0.0/scdl_2.0.0_macOS-64bit.tar.gz"
-    sha256 "5aed4e28ff65ae8a69a0e5fcc5b4ce14a519f8615ef4a4024ef2cb22b6207a8a"
+    url "https://github.com/imthaghost/scdl/releases/download/v2.0.1/scdl_2.0.1_macOS-64bit.tar.gz"
+    sha256 "039b7331acce277ff722470fda95b0506089be4e88c27642d711ea940d0904f8"
   elsif OS.linux?
     if Hardware::CPU.intel?
-      url "https://github.com/imthaghost/scdl/releases/download/v2.0.0/scdl_2.0.0_Linux-64bit.tar.gz"
-      sha256 "5c0525385662b90ea12ca86c376b44f145778a717c7a2cfb82ce6daa39a226d9"
+      url "https://github.com/imthaghost/scdl/releases/download/v2.0.1/scdl_2.0.1_Linux-64bit.tar.gz"
+      sha256 "31fbfecd4422cb0bce2dae8fc65f2753be02e3f7d8da1ada31a59d84d8a6beff"
     end
   end
 
