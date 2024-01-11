@@ -5,20 +5,20 @@
 class Scdl < Formula
   desc "SoundCloud Music Downloader | Scdl is the fastest SoundCloud music downloading CLI tool. Scdl utilizes go routine pools which allows you to download any song from SoundCloud within seconds. There are extended features such as recursively downloading all songs from a given artist and grabbing song artwork."
   homepage "https://github.com/imthaghost/scdl"
-  version "2.3.3"
+  version "2.3.4"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/imthaghost/scdl/releases/download/v2.3.3/scdl_2.3.3_darwin-arm64.tar.gz"
-      sha256 "e7c3092888f97446ca8417388b0af2c0a730faf1879a04ab2ebe0177b065d6af"
+      url "https://github.com/imthaghost/scdl/releases/download/v2.3.4/scdl_2.3.4_darwin-arm64.tar.gz"
+      sha256 "f1b8ae5890ab41dd46fcabcee1106d4b64a216a9cc4b9a9dad14a771b624bb47"
 
       def install
         bin.install "scdl"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/imthaghost/scdl/releases/download/v2.3.3/scdl_2.3.3_darwin-amd64.tar.gz"
-      sha256 "b5b8be6e2ebd67f852e6d0ebcfff6de85918715488c5d5875a842f3baec39946"
+      url "https://github.com/imthaghost/scdl/releases/download/v2.3.4/scdl_2.3.4_darwin-amd64.tar.gz"
+      sha256 "fa33345bf53013b45446874299692fdd226191bd26d829acb6b818ab006067a4"
 
       def install
         bin.install "scdl"
@@ -28,16 +28,16 @@ class Scdl < Formula
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/imthaghost/scdl/releases/download/v2.3.3/scdl_2.3.3_linux-arm64.tar.gz"
-      sha256 "e675ff6ea89f72eb729662365c16d55f7bd7d2971372ac15cde88f248469f0b0"
+      url "https://github.com/imthaghost/scdl/releases/download/v2.3.4/scdl_2.3.4_linux-arm64.tar.gz"
+      sha256 "2a08b6e682eeeca29a9ff5d0f790b4011bb26a784bfa9b8726287a52bf976433"
 
       def install
         bin.install "scdl"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/imthaghost/scdl/releases/download/v2.3.3/scdl_2.3.3_linux-amd64.tar.gz"
-      sha256 "5a5e895eaa3fd474a921464d5f19be3969b4561dcd97baaf5054d558252100b9"
+      url "https://github.com/imthaghost/scdl/releases/download/v2.3.4/scdl_2.3.4_linux-amd64.tar.gz"
+      sha256 "4d42e28cbde50c6fd7232a7d2b8b5b129663a3e50997d577dc36560e493f4460"
 
       def install
         bin.install "scdl"
